@@ -4,9 +4,21 @@ You can find a (short and hopefully sweet) Mathematica notebook to compute the W
 
 This uses the below formula from <a href="https://arxiv.org/abs/2303.04264">https://arxiv.org/abs/2303.04264</a>
 
+References for the recalled background below can also be found in that paper.
+
 # Background
 
-To do
+Fix some $n>0$. Let $\mathcal{A}=\mathbb{Z}[q,q^{-1}]$ for a formal parameter $q$. 
+We work with the divided power quantum group for $\mathfrak{sp}_{2n}$. 
+
+Fix any field $\mathbb{K}$ and any $\xi\in\mathbb{K}\setminus\{0\}$, we can specialize this quantum algebra to $U_{\xi}(\mathfrak{sp}_{2n})$ by sending $q\mapsto\xi$. We have **no restrictions** on $\mathbb{K}$ or $\xi$.
+
+The quantum group $U_{\xi}(\mathfrak{sp}_{2n})$ has four types of natural modules, all of which are indexed by dominant integral weights $\lambda\in X^{+}$:
+
+- The **Weyl modules** $\Delta(\lambda)$ that play the role of standard modules.
+- The **dual Weyl modules** $\nabla(\lambda)$ that play the role of costandard modules.
+- The **simple modules** $L(\lambda)$ that play the role of atoms. These are not addressed in this notebook.
+- The **indecomposable tilting modules** $T(\lambda)$ that play the role of projective modules.
 
 # Running the notebook
 
