@@ -34,7 +34,15 @@ The Mathematica notebook computes these characters.
 
 # Running the notebook
 
-To do
+There are only a few functions in the notebook:
+
+>qbin[n_, k_, q_] is the quantum binomial $\binom{n}{k}$ (or rather a shift of it); with input n,k, and $\xi\leftrightsquigarrow q$
+
+>WeylCharSp[n_, k_, p_, q_] computes the character of $T(\varpi_{k})$ for $\mathfrak{sp}_{2n}$. Here $p$ is the characteristic of $\mathbb{K}$ (take $p\gg 0$ to simulate characteristic zero) and $\xi\leftrightsquigarrow q$
+
+>XX = Table[WeylCharSp[78, k, 7, 2], {k, 0, 78}];
+MM = Table[If[Count[XX[[j]], i] == 1, 1, 0], {i, 0, 78}, {j, 0, 78}];
+MatrixPlot[MM] then outputs the whole base change matrix as in the example below
 
 # Example
 
@@ -43,3 +51,7 @@ For example, for $n=78$ and quantum characteristic $p=7,\ell=3$ and $p=3,\ell=2$
 <div style="text-align: center"><img src="https://www.dtubbenhauer.com/papers/spweyl1.png" width="500" height="504" style="border: 0px;" /></div><div style="text-align: center"><img src="https://www.dtubbenhauer.com/papers/spweyl2.png" width="500" height="504" style="border: 0px;" /></div>
 
 The columns are the fundamental tilting modules $T(\varpi_{i-1})$ and the rows the fundamental Weyl modules $\Delta(\varpi_{i-1})$, both starting to count at one.
+
+# Contact
+
+In case of questions drop us an email: elijah.bodish@gmail.com dtubbenhauer@gmail.com
