@@ -1,6 +1,6 @@
 # sp2n-fundamental-tilting-charaters
 
-You can find a (short and hopefully sweet) Mathematica notebook to compute the Weyl characters for fundamental tilting modules.
+You can find a (short and hopefully sweet) Mathematica notebook to compute the Weyl characters for fundamental tilting modules that you can download on this page.
 
 This uses the below formula from <a href="https://arxiv.org/abs/2303.04264">https://arxiv.org/abs/2303.04264</a>
 
